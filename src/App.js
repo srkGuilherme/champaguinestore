@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Product from "./components/Product";
 import axios from "axios";
 
@@ -26,6 +27,10 @@ function App() {
           <Product title={product.title} price={product.price}></Product>
         ))}
       </div>
+      <Footer
+        email="champaguinestore@store.com.br"
+        phone="(47)97070-7070"
+      ></Footer>
     </div>
   );
 }
