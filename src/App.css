@@ -22,12 +22,53 @@
 .Icon-in-Header {
   cursor: pointer;
   height: 30px;
+  transition: 0.2s;
+}
+
+.Icon-in-Header:active {
+  scale: 1.1;
+  transition: 0.01s;
+}
+
+.CloseSearch {
+  padding: 0px 0px 0px 10px;
+  display: flex;
+  height: 30px !important;
+  border: none;
+  border-radius: 15px;
+  width: 30px;
   transition: 1s;
 }
 
-.Icon-in-Header:hover {
-  scale: 1.15;
+.CloseSearch input {
+  display: none;
   transition: 0.2s;
+}
+
+.OpenSearch {
+  padding: 0px 0px 0px 10px;
+  display: flex;
+  height: 30px !important;
+  transition: 0.2s;
+  border: solid 1px gray;
+  border-radius: 15px;
+  width: 250px;
+}
+
+.OpenSearch input {
+  background: none;
+  width: 80%;
+  height: 100%;
+  border: none;
+  border-radius: 15px;
+  right: 0px;
+}
+.OpenSearch input:focus {
+  outline: none;
+}
+
+.OpenSearch img {
+  scale: 0.8;
 }
 
 .Catalog {
